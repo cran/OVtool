@@ -1,0 +1,6 @@
+exportPattern("^[[:alpha:]]+")
+importFrom(magrittr,"%>%")
+importFrom(rlang,.data)
+import(devtools)
+S3method(plot, ov)
+S3method(summary, ov)
