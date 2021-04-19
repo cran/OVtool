@@ -27,7 +27,7 @@ summary.ov <- function(object, model_results, sig_level=0.05, progress = TRUE, .
     }
   }
 
-  # Effect Size cases
+  # trt Size cases
   effect_size_text = dplyr::case_when((raw_treat < 0 & all(trt_effect < 0)) |
                                  raw_treat >= 0 & all(trt_effect >= 0) ~ "no sign changes",
                                raw_treat < 0 & all(trt_effect >= 0) |
@@ -37,12 +37,12 @@ summary.ov <- function(object, model_results, sig_level=0.05, progress = TRUE, .
   if(effect_size_text == "no sign changes"){
     diff_which.max = which.max(abs(trt_effect - raw_treat))
     most_extreme = trt_effect[diff_which.max]
-    text = paste0("The sign of the estimated effect is expected to remain consistent when simulated unobserved confounders have the same strength of association with the treatment indicator and outcome that are seen in the observed confounders. In the most extreme observed case, the estimated effect size shifts from ", round(raw_treat,3), " to ", round(most_extreme,3), ".")
+    text = paste0("The sign of the estimated effect is expected to remain consistent when simulated unobserved confounders have the same strength of association with the treatment indicator and outcome that are seen in the observed confounders. In the most extreme observed case, the estimated treatment effect shifts from ", round(raw_treat,3), " to ", round(most_extreme,3), ".")
 
   } else if(effect_size_text == "all sign changes"){
     diff_which.max = which.max(abs(trt_effect - raw_treat))
     most_extreme = trt_effect[diff_which.max]
-    text = paste0("The sign of the estimated effect is *not* expected to be robust to unobserved confounders that have the same strength of association with the treatment indicator and outcome that are seen in any of the observed confounders. In the most extreme observed case in which the sign changes, the estimated effect size shifts from ", round(raw_treat,3), " to ", round(most_extreme,3), ".")
+    text = paste0("The sign of the estimated effect is *not* expected to be robust to unobserved confounders that have the same strength of association with the treatment indicator and outcome that are seen in any of the observed confounders. In the most extreme observed case in which the sign changes, the estimated treatment effect shifts from ", round(raw_treat,3), " to ", round(most_extreme,3), ".")
 
   } else if(effect_size_text == "some sign changes"){
     # calculate sign changes
@@ -61,7 +61,7 @@ summary.ov <- function(object, model_results, sig_level=0.05, progress = TRUE, .
     }
     diff_which.max = which.max(abs(trt_effect[which.change] - raw_treat))
     most_extreme = trt_effect[which.change][diff_which.max]
-    text = paste0("The sign of the estimated effect is expected to remain consistent when simulated unobserved confounders have the same strength of associations with the treatment indicator and outcome that are seen in ", nochange, " of the ", total, " observed confounders. In the most extreme observed case in which the sign changes, the estimated effect size shifts from ", round(raw_treat,3), " to ", round(most_extreme,3), ". The sign of the estimate would not be expected to be preserved for unobserved confounders that have the same strength of association with the treatment indicator and outcome as ", paste(changes, collapse=", "), ".")
+    text = paste0("The sign of the estimated effect is expected to remain consistent when simulated unobserved confounders have the same strength of associations with the treatment indicator and outcome that are seen in ", nochange, " of the ", total, " observed confounders. In the most extreme observed case in which the sign changes, the estimated treatment effect shifts from ", round(raw_treat,3), " to ", round(most_extreme,3), ". The sign of the estimate would not be expected to be preserved for unobserved confounders that have the same strength of association with the treatment indicator and outcome as ", paste(changes, collapse=", "), ".")
    }
 
   # Pvalue Size cases
