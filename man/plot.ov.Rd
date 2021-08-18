@@ -34,7 +34,7 @@ This function will print the plot to screen that the use specifies with print_gr
 data(sud)
 sud = data.frame(sud[sample(1:nrow(sud),100),])
 sud$treat = ifelse(sud$treat == "A", 1, 0)
-sud$wts = sample(seq(0.01, .1,by=.01), size=nrow(sud), replace = TRUE)
+sud$wts = sample(seq(1, 10, by=.01), size=nrow(sud), replace = TRUE)
 outcome_mod = outcome_model(data = sud,
                             weights = "wts",
                             treatment = "treat",

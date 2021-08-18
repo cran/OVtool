@@ -1,5 +1,6 @@
 exportPattern("^[[:alpha:]]+")
 importFrom(magrittr,"%>%")
+importFrom(rlang,":=")
 importFrom(rlang,.data)
 import(devtools)
 import(twang)

@@ -1,7 +1,7 @@
 Package: OVtool
 Type: Package
 Title: Omitted Variable Tool
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(person(given = "Joseph", family = "Pane", role = c("aut", "cre"),
                     email = "josephp@rand.org"),
              person(given = "Lane", family = "Burgette", role = "aut"),
@@ -19,11 +19,11 @@ Depends: R (>= 2.10), twang
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-04-16 20:42:28 UTC; josephp
+Packaged: 2021-08-18 19:08:43 UTC; josephp
 Author: Joseph Pane [aut, cre],
   Lane Burgette [aut],
   Beth Ann Griffin [aut],
   Daniel McCaffrey [aut]
 Maintainer: Joseph Pane <josephp@rand.org>
 Repository: CRAN
-Date/Publication: 2021-04-19 16:00:03 UTC
+Date/Publication: 2021-08-18 19:50:02 UTC

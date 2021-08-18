@@ -277,7 +277,7 @@ These results were produced with 50 simulations (`n_reps`) of the unobserved con
 # plot.ov(ovtool_results_twang, print_graphic = "1", col = "bw")
 ```
 
-### 3.3.4   Recommendations for reporting the sensitivty analysis
+### 3.3.4   Recommendations for reporting the sensitivity analysis
 
 Finally, we can interpret this graphic by running the summary command on the `ov` object:
 
@@ -393,7 +393,7 @@ plot.ov(ovtool_results_twang_att, print_graphic = "2", col = "color")
 plot.ov(ovtool_results_twang_att, print_graphic = "3", col = "color")
 ```
 
-### 4.3.4   Recommendations for reporting the sensitivty analysis
+### 4.3.4   Recommendations for reporting the sensitivity analysis
 
 Finally, we will run the `summary.ov` function to receive the tool's recommendations.  
 
@@ -405,7 +405,7 @@ The text produced states that the sign of the estimated effect is expected to re
 
 # 5   Conclusion
 
-In observational studies, understanding the sensitivity of reported results to unobserved confounders is a key step when interpreting the strength of evidence. This package aims to provide user-friendly tools to assess the sensitivity of research findings to omitted variables when estimating causal effects using PS weighting. 
+In observational studies, understanding the sensitivity of reported results to unobserved confounders is a key step when interpreting the strength of evidence. This package aims to provide user-friendly tools to assess the sensitivity of research findings to omitted variables when estimating causal effects using PS weighting.
 
 # 6   About This Tutorial
 
