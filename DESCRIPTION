@@ -1,10 +1,10 @@
 Package: OVtool
 Type: Package
 Title: Omitted Variable Tool
-Version: 1.0.2
-Authors@R: c(person(given = "Joseph", family = "Pane", role = c("aut", "cre"),
-                    email = "josephp@rand.org"),
-             person(given = "Lane", family = "Burgette", role = "aut"),
+Version: 1.0.3
+Authors@R: c(person(given = "Lane", family = "Burgette", role = c("aut", "cre"),
+                    email = "burgette@rand.org"),
+             person(given = "Joseph", family = "Pane", role = "aut"),
              person(given = "Beth Ann", family = "Griffin", role = "aut"),
              person(given = "Daniel", family = "McCaffrey", role = "aut"))
 Description: This tool was designed to assess the sensitivity of research findings to omitted variables when estimating causal effects using propensity score (PS) weighting. This tool produces graphics and summary results that will enable a researcher to quantify the impact an omitted variable would have on their results. Burgette et al. (2021) describe the methodology behind the primary function in this package, ov_sim. The method is demonstrated in Griffin et al. (2020) <doi:10.1016/j.jsat.2020.108075>.
@@ -19,11 +19,11 @@ Depends: R (>= 2.10), twang
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-08-18 19:08:43 UTC; josephp
-Author: Joseph Pane [aut, cre],
-  Lane Burgette [aut],
+Packaged: 2021-10-25 17:55:10 UTC; burgette
+Author: Lane Burgette [aut, cre],
+  Joseph Pane [aut],
   Beth Ann Griffin [aut],
   Daniel McCaffrey [aut]
-Maintainer: Joseph Pane <josephp@rand.org>
+Maintainer: Lane Burgette <burgette@rand.org>
 Repository: CRAN
-Date/Publication: 2021-08-18 19:50:02 UTC
+Date/Publication: 2021-11-02 08:10:07 UTC

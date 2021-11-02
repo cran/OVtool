@@ -1,4 +1,4 @@
-2b3465d15f5ba2ac49a94ed58aac77bf *DESCRIPTION
+ec8fab0a3229fa5e5fc914684f10994a *DESCRIPTION
 e1264459081bce933e86a9f4733ac1cb *NAMESPACE
 7b2e918778617189bc2bd4fc952842cd *R/add_pvals_plot.R
 fa57830176b30b4ee47a368eebe91436 *R/add_reps.R
@@ -13,12 +13,12 @@ a4758164322a63a431cc7bce71be32ea *R/plot.ov.R
 54829781a09752371f9e2a86f57a1afb *R/prep_for_plots.R
 63aad98360714ce6edfaae7f2ba46355 *R/summary.ov.R
 c7a146e63565ff4d559cbe692cd6f6b3 *README.md
-457a072a052a4c8c57c56a195a2a2eb6 *build/vignette.rds
+d0287729b9d0a917008af73d7e185ee6 *build/vignette.rds
 cae3f06faf8ca188c5d962a994a5fc1c *data/sud.rda
 17ada473b4efa17bb9e022049978d104 *inst/addreps_att-1.png
 9506599ea80e88198521911f9d0f68a8 *inst/doc/OVtool.R
 80378e50e52e63940f7b6f18eba0bef2 *inst/doc/OVtool.Rmd
-0ef3b21706dc64395b6fee969ccd97e0 *inst/doc/OVtool.html
+6b4bf3606b15383aaccd3651c3876110 *inst/doc/OVtool.html
 e2ce6ba8747027764d722b7456c105a1 *inst/fig1-1.png
 fd3b129b2299914e04e30e2f4c568eb3 *inst/fig1_att-1.png
 a8bf62e5b1c16ef37d5ffdc710e6777f *inst/fig2-1.png
